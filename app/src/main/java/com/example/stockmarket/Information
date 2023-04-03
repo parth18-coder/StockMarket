@@ -1,0 +1,25 @@
+In jetpack compose setContentView() is replace by setContent{}. Here to define the UI we define the functions in Kotlin and we
+annotate these functions with @composable. Here we separates are UI with single UI, by this we make components reusable so we have
+to define components only ones.
+
+Here we use the clean architecture which divide the app into data layer, domain layer and presentation layer.
+a) In data layer we put the data related logic, retrofit, room, csv parsing.
+b) In business logic like search bar.
+c) presentation layer contain all the Ui related
+
+we use retrofit to download the csv file and then take the byte stream from the api and then parse it with openCSV.
+
+Now coroutines are like threads but they are more efficient than threads. Coroutines are executed inside the thread. we can start
+many coroutines inside single thread.
+Coroutines are suspendable means we can execute some instructions and then pause the coroutines in middle in execution and then countinue
+it when we want it to, this thing can not be possible in threads
+Coroutines can switch there context means coroutines that start in one thread can switch the thread and run in other thread.So
+coroutines are light weight thread with some extra functionality.
+
+Suspend functions should be call inside another suspend functions or in coroutine.
+
+Retrofit is an easy and fast library to retrieve and upload data via a REST-based web service.
+Retrofit manages the process of receiving, sending, and creating HTTP requests and responses.Retrofit is a REST Client for Java
+and Android allowing to retrieve and upload JSON (or other structured data) via a REST based You can configure which converters
+are used for the data serialization
+
