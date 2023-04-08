@@ -86,11 +86,13 @@ fun CompanyInfoScreen(
                     fontSize = 12.sp,
                     modifier = Modifier.fillMaxWidth(),
                 )
+
+                Spacer(modifier = Modifier.height(16.dp))
                 
                 if(state.stockInfos.isNotEmpty()){
                     Spacer(modifier = Modifier.height(16.dp))
                     Text(text = "Market Summary")
-                    Spacer(modifier = Modifier.height(16.dp))
+                    Spacer(modifier = Modifier.height(32.dp))
                     StockChart(
                         infos=state.stockInfos,
                         modifier= Modifier
